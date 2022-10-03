@@ -1,0 +1,136 @@
+*{
+    margin: 0; 
+    padding: 0;
+    font-size: 16px;
+    font-family: Georgia;
+    box-sizing: border-box;
+
+}
+html{
+    scroll-behavior: smooth;
+}
+body{
+    min-height: 200vh;
+    background-color: hsl(0 0% 20%);
+}
+#overflow{
+height: 300vh;
+}
+header{
+    background-image: url('./pictures/library_header.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 400px;
+   background-repeat: no-repeat;
+   background-attachment: fixed;
+    color: white;
+}
+header .overlay{
+    overflow-x: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    background-color: hsl(0 0% 20% / .6);
+}
+header .overlay h1{
+    
+    font-size: 5rem;
+}
+
+
+nav{  
+    z-index: 1;
+   position: sticky;
+    top: 10px;
+    width: 100%;
+    margin: 100px auto 0px auto;
+    height: 100px;
+    background-color: hsl(20 100% 70%);
+    box-shadow: 0px 10px 20px black;
+    border: white solid;
+ 
+}
+nav ul{
+
+    list-style: none;
+    height: 100%; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+nav ul li a{
+    
+   
+    padding: 20px;
+    color: white;
+    display: block;
+    text-decoration: none;
+    margin-right: 20px;
+    
+}
+nav ul li a:hover{
+    cursor: pointer;
+    color: white;
+    font-size: 2rem;
+}
+
+.about{
+    padding: 80px;
+    margin-top: 20px;
+    width: 100%;
+    height: 800px;
+   
+}
+.about h2{
+    color: white;
+   
+    margin-top: 200px;
+    font-size: 3rem;
+    border-bottom: 10px solid black;
+}
+.about p{
+    color: white;
+    max-width: 50ch;
+}
+h2.right{
+    text-align: right;
+   
+}
+p.right{
+    float: right;
+}
+.about aside{
+    background-image: url('./pictures/guy_book_case.jpg');
+    background-size: cover;
+    background-position: center;
+    
+    max-width: 1000px;
+   
+    height: 800px;
+    margin: 200px auto 0px auto;
+    border: white solid;
+    box-shadow: 0px 10px 20px black;
+}
+.about aside .overlay{
+    width: 100%;
+    height: 100%;
+   background-color: hsl(0 0% 20% / .3);
+   display: flex;
+   align-items: center;
+   justify-content: center;
+}
+.about aside .overlay p{
+    text-align: center;
+    font-size: 2rem;
+    font-style: italic;
+}
+@media only screen and (max-width: 900px){
+    .about h2{
+        font-size: 2rem;
+    }
+}
